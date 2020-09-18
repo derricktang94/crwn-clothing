@@ -1,3 +1,5 @@
+import { UserActionTypes } from './user-types';
+
 const INITIAL_STATE = {
     currentUser: null
 }
@@ -5,7 +7,7 @@ const INITIAL_STATE = {
 // state is something redux store will going to pass to reducer whenever action is fire
 const userReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case 'SET_CURRENT_USER':
+        case UserActionTypes.SET_CURRENT_USER:
             return {
                 ...state,
                 currentUser: action.payload
