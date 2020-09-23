@@ -44,6 +44,7 @@ class App extends React.Component {
     this.unsubscribeFromAuth();
   }
 
+  // Route automatically pass the 3 Object namely match, history and location as props to component
   render() {
     return (
       <div>
