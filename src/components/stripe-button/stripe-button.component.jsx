@@ -3,7 +3,7 @@ import StripeCheckout from 'react-stripe-checkout';
 
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
-  const publishableKey = '';
+  const publishableKey = 'pk_test_51HUqvFAJsLYdZj6OxczzmhaZw12QZ79eBqwPLt33wtwTZSjR96TNsHvwyde9DA0cNPOlIcdPMMDzaFRC82c1PV7r00Wvi7pm3L';
 
   const onToken = (token) => {
     console.log(token);
